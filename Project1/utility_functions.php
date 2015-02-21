@@ -11,7 +11,7 @@ function execute_sql_in_oracle($sql) {
   //putenv("ORACLE_HOME=/home/oracle/OraHome1");
   //putenv("ORACLE_SID=orcl");
 
-  $connection = oci_connect ("test", "test", "gqian:1521/orcl");
+  $connection = oci_connect ("gq024", "cfzunb", "gqian:1521/orcl");
   if($connection == false){
     // failed to connect
     display_oracle_error_message(null);
